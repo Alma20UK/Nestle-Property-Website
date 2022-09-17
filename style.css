@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto Slab', serif !important;
+}
+
+.teale {
+    background-color: #10403d !important;
+}
+
+.tealeText {
+    color: #10403d !important;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: 	#10403d !important;
+}
+
+.btn-outline-success {
+    border-color: #10403d !important;
+    color: #10403d !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #10403d !important;
+    color: white !important;
+}
+
+.navbar-toggler {
+   border-color: white !important;
+   color: white !important;
+   background-color: #10403d !important;
+  
+}
+
+.navbar-toggler:hover {
+    background-color: #10403d !important;
+}
+
+.nav-link:hover {
+    font-weight: 1000 !important;
+}
+
+.homepagePicture img {
+    max-width: 80%;
+    height: auto;
+}
+
+.nestleLogo {
+    max-height: 2.75rem;
+    width: auto;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+

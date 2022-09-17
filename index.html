@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestle Property Homepage</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- The 'navbar-expand' class allows the navbar to collapse and expand depending on the screen size-->
+<nav class="teale navbar navbar-expand-md navbar-dark p-4 p-md-5">
+    <img class="nestleLogo image-fluid px-2" src="media/nestle_white.png" alt="nestleLogo">
+    <!-- Nave Bar burger menu for mobile 
+        'aria' tage are for accessibility purposes (screen readers)-->
+    <button class="navbar-toggler btn-light align-items-center " type="button" data-bs-toggle="collapse"
+        data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" area-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar links-->
+    <div class="collapse navbar-collapse justify-content-end mt-3" id="main-nav">
+        <ul class="navbar-nav text-end">
+            <li class="navbar-item pe-md-4">
+                <a class="nav-link text-white" href="#holiday">Holiday Let Management</a>
+            </li>
+            <li class="navbar-item pe-md-4">
+                <a class="nav-link text-white" href="#maintenance">Property Maintenance</a>
+            </li>
+            <li class="navbar-item pe-md-4">
+            <li class="navbar-item">
+                <a class="nav-link text-white" href="#why">Why Nestle?</a>
+            </li>
+            <li class="navbar-item ps-md-4">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Display classes 1-6 can be added to any elemnt to add specific styling
+Bootstrap has a handful of inherant utility colour classes like 'success' used below
+utility classes - m-(1-5) is used for margin same for p(1-5) for padding. You can use my-(1-5) for margin top and bottom or mx-(1-5) for
+left and right. mt would be margin-top and mb for bottom. OR ms for margin-start and me for margin-end. 
+
+The page is split into 12 columns that you can divvy up to take up alloted space. Here for exapple I've given the nestle logo 3 columns and
+the navigation menu 8. If you want them to respond to screen size you can weite things like col-sm-4 which would mean that the div will take
+up four columns on smaller scren sizes. 'lg' for large. 'xsm or xlg' for very small or very large.
+You can also use 'justify-content-(start/ center/ end)' and they will behavine a similar way to flexbox.
+d-none means don't display it until d-sm-block for example, which means it will display at small screens -->
+        
+<section id="property">
+
+    <div class="teale text-center text-white p-5 pt-4">
+
+        <div class="row align-items-center text-md-start">
+            <div  class="col-md-4">
+                <h1 class="display-6 fw-bold">Property management in Bath</h1>
+<!-- Lead is another class you can add that can provide some alternative styling for a p tag.
+text-center is another class you can add for text alignment. Can also use 'text-start' and 'text-end' 
+There are also text decoration and font weight classes such as 'text-decoration-underline', 'text-decoration-line-through' and 'fw-bold'-->
+                <p class="lead">We are a specialist property management company operating in and around the city of
+                    Bath.</p>
+                <button class="btn btn-outline-light my-5 d-none d-md-block">Find out more</button>
+            </div>
+            <div class="homepagePicture my-4 col-md-8 text-md-end">
+<!-- mx-auto centres the image. img-fluid makes it responsive based on it's container. rounded rounds it's corners.
+'text-center' in the div above centers the image-->
+                <img src="media/Bath Rooftops.webp" class="img-fluid" alt="Bath Rooftops">
+            </div>
+        </div>
+
+        <button class="btn btn-outline-light m-3 d-md-none">Find out more</button>
+    </div>
+
+</section>
+
+<!-- A section tage allows you to 'jump' to that part of the page using the nav bar, for example -->
+<section id="holiday">
+
+    <div class="text-center text-md-start bg-white p-5">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-5">
+                <i class="bi bi-calendar-date" style="font-size:65px; color:#10403d"></i>
+                <h1 class="tealeText display-6 fw-bold mt-3">Holiday Let Management</h1>
+                <p class="tealeText lead">Our management service can be tailored to your requirements. We can handle one
+                    element of your holiday let, which might be linen and laundry requirements or key holding, all the
+                    way through to the full management service.</p>
+                <button class="btn btn-outline-success my-5 d-none d-md-block">Find out more</button>
+            </div>
+            <div class="homepagePicture text-center my-3 col-md-6">
+                <img src="media/bedroom.webp" class="img-fluid rounded-circle" alt="Bedroom Picture">
+            </div>
+        </div>
+        <button class="btn btn-outline-success m-3 d-md-none">Find out more</button>
+    </div>
+
+</section>
+
+
+<section id="maintenance">
+
+    <div class="teale text-center text-md-start text-white p-5">
+        <div class="row justify-content-between align-items-center">
+            <div class="homepagePicture text-center my-3 mb-4 col-md-6">
+                <img src="media/stairway.webp" class="img-fluid rounded-circle" alt="Bath Rooftops">
+            </div>
+            <div class="col-md-5">
+                <i class="bi bi-paint-bucket"  style="font-size:65px; color:white"></i>
+                <h1 class="display-6 fw-bold mt-3">Property Maintenance</h1>
+                <p class="lead">Based in the heart of the city and with many years of experience working with local
+                    residents, we offer an extensive range of services tailored to our customers needs.</p>
+                <button class="btn btn-outline-light my-5 d-none d-md-block">Find out more</button>
+            </div>
+            
+        </div>
+        <button class="btn btn-outline-light m-3 d-md-none">Find out more</button>
+    </div>
+
+</section>
+
+
+<section id="why">
+
+    <div class="text-center bg-white p-5">
+        <div class="row justify-content-between">
+            <h1 class="tealeText display-6 fw-bold mb-5">Why Nestle?</h1>
+            <div class="col-md-3 my-2">
+                <i class="bi bi-gear" style="font-size:45px; color:#10403d"></i>
+                <h3 class="tealeText">Diligent</h3>
+                <p class="tealeText lead">We are diligent, hardworking and proactive. We go above and beyond to ensure
+                    the rental of your property is as stress free and productive as possible.</p>
+            </div>
+            <div class="col-md-3 my-2">
+                <i class="bi bi-tag" style="font-size:45px; color:#10403d"></i>
+                <h3 class="tealeText">Dynamic Pricing</h3>
+                <p class="tealeText lead">We build a dynamic pricing strategy for your rental property using specialist
+                    software to maximise your rental income.</p>
+            </div>
+            <div class="col-md-3 my-2">
+                <i class="bi bi-geo-alt" style="font-size:45px; color:#10403d"></i>
+                <h3 class="tealeText">Local</h3>
+                <p class="tealeText lead">Unlike many Airbnb management companies operating in the city, we live and
+                    spend our time in Bath. We can meet guests on arrival, should you prefer or be at your property in
+                    an instant if any issues arise.</p>
+            </div>
+            <div class="col-md-3 my-2">
+                <i class="bi bi-tools" style="font-size:45px; color:#10403d"></i>
+                <h3 class="tealeText">Handy</h3>
+                <p class="tealeText lead">We have a dedicated maintenance team who can turn their hands to do most jobs
+                    required to keep your property in tip-top shape. Ensuring your guests stay is as comfortable as it
+                    can be and those 5 star reviews keep coming in.</p>
+            </div>
+        </div>
+        <button class="btn btn-outline-success m-3">Find out more</button>
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <div class="teale text-center text-md-start text-white p-5">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-5">
+                <h1 class="display-6 fw-bold">Let's work together</h1>
+                <p class="lead">Get in touch with our friendly team to discuss how we can help!</p>
+                <p class="lead">Nestle Property Management <br>Bath BA2 3RW</p>
+                <p class="lead">T: 01225 375 215<br>E: georges@nestleproperty.com</p>
+                <button class="btn btn-outline-light my-5 d-none d-md-block">Find out more</button>
+            </div>
+            <div class="homepagePicture text-center my-3 col-md-7">
+                <img src="media/handyman.webp" class="img-fluid rounded-circle" alt="Bath Rooftops">
+            </div>
+        </div>
+        <button class="btn btn-outline-light m-3 d-md-none">Find out more</button>
+    </div>
+
+</section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
